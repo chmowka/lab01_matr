@@ -1,36 +1,28 @@
 #include <stdio.h>
-#include <locale.h>
+
 #define _USE_MATH_DEFINES
 #include <math.h>
 
+int main() {
+    int num;
 
-int main(void)
-{
-    setlocale(LC_ALL, "");
-    double volume, a, b, c, s, h, rad;
+    printf("Р’РІРµРґРёС‚Рµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ = ");
+    scanf("%d", &num);
+ 
 
+    if (num < 100 || num > 999) {
+      printf("РћС€РёР±РєР°: С‡РёСЃР»Рѕ РЅРµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ \n");
+      return 1;
+    }
 
-    printf("Введите сторону a = ");
-    scanf("%lf", &a);
+    int num1, num4;
 
-    printf("Введите сторону b = ");
-    scanf("%lf", &b);
+    num1 = num / 100;
+    num4 = num % 10;
 
-    printf("Угол между ними = ");
-    scanf("%lf", &c);
-
-    printf("Высота = ");
-    scanf("%lf", &h);
-
-    rad = c *( M_PI /180.0);
-
-    s = a * b * sin(rad);
-    printf("Площадь основания = %f", s);
-
-    volume = s * h;
-    printf("Объем параллелепипеда = %f", volume);
-
-
+    printf("РїРµСЂРІР°СЏ С†РёС„СЂР° = %d\n", num1);
+    printf("РїРѕСЃР»РµРґРЅСЏСЏ С†РёС„СЂР° = %d\n", num4);
 
     return 0;
 }
+
