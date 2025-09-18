@@ -3,7 +3,7 @@
 int main(void) {
     int x, y;
 
-    printf("Введите x: ");
+    printf("Р’РІРµРґРёС‚Рµ x: ");
     scanf("%d", &x);
 
     y = (((5 * x + 2) * x - 7) * x + 3) * x + 4;
@@ -12,3 +12,4 @@ int main(void) {
 
     return 0;
 }
+
