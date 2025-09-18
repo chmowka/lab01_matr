@@ -8,7 +8,7 @@ int main() {
     setlocale(LC_ALL, "");
     double num1, num2, num3;
 
-    printf("Введите три числа = ");
+    printf("Р’РІРµРґРёС‚Рµ С‚СЂРё С‡РёСЃР»Р° = ");
     scanf("%lf", &num1);
     scanf("%lf", &num2);
     scanf("%lf", &num3);
@@ -16,12 +16,12 @@ int main() {
 
     if (num1 - num2 < 0) {
         if (num2 > num3) {
-            printf("Наибольшее из второго и третьего: %.2lf\n", num2);
+            printf("РќР°РёР±РѕР»СЊС€РµРµ РёР· РІС‚РѕСЂРѕРіРѕ Рё С‚СЂРµС‚СЊРµРіРѕ %.2l\n", num2);
         } else {
-            printf("Наибольшее из второго и третьего: %.2lf\n", num3);
+            printf("РќР°РёР±РѕР»СЊС€РµРµ РёР· РІС‚РѕСЂРѕРіРѕ Рё С‚СЂРµС‚СЊРµРіРѕ: %.2lf\n", num3);
         }
     } else {
-        printf("Квадраты чисел:\n");
+        printf("РљРІР°РґСЂР°С‚С‹ С‡РёСЃРµР»:\n");
         printf("%.2lf^2 = %.2lf\n", num1, pow(num1, 2));
         printf("%.2lf^2 = %.2lf\n", num2, pow(num2, 2));
         printf("%.2lf^2 = %.2lf\n", num3, pow(num3, 2));
@@ -30,3 +30,4 @@ int main() {
     return 0;
 
 }
+
