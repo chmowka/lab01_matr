@@ -10,27 +10,28 @@ int main(void)
     double volume, a, b, c, s, h, rad;
 
 
-    printf("Введите сторону a = ");
+    printf("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ  a = ");
     scanf("%lf", &a);
 
-    printf("Введите сторону b = ");
+    printf("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ b = ");
     scanf("%lf", &b);
 
-    printf("Угол между ними = ");
+    printf("РЈРіРѕР» РјРµР¶РґСѓ РЅРёРјРё = ");
     scanf("%lf", &c);
 
-    printf("Высота = ");
+    printf("РІС‹СЃРѕС‚Р° = ");
     scanf("%lf", &h);
 
     rad = c *( M_PI /180.0);
 
     s = a * b * sin(rad);
-    printf("Площадь основания = %f", s);
+    printf("РџР»РѕС‰Р°РґСЊ РїР°СЂР°Р»Р»РµР»РµРїРёРїРµРґР° = %f", s);
 
     volume = s * h;
-    printf("Объем параллелепипеда = %f", volume);
+    printf("РћР±СЉРµРј РїР°СЂР°Р»Р»РµР»РµРїРёРїРµРґР° = %f", volume);
 
 
 
     return 0;
 }
+
