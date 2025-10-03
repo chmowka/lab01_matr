@@ -4,13 +4,13 @@ int main() {
     int r;
     char x;
     
-    printf("Введите первое число: ");
+    printf("Введите первое число =  ");
     scanf("%lf", &num1);
   
-    printf("Введите второе число: ");
+    printf("Введите второе число =  ");
     scanf("%lf", &num2);
   
-    printf("Введите операцию +, -, *, / ");
+    printf("Введите операцию +  -  *  / ");
     scanf(" %c", &x);
     
     switch (x) {
@@ -21,11 +21,11 @@ int main() {
             if (num2 != 0) {
                 r = num1 / num2;
             } else {
-                printf("Ошибка: деление на ноль!\n");
+                printf("на ноль не делится \n");
             }
             break;
         default:
-            printf("Ошибка: неизвестная операция!\n");
+            printf("неверная операция\n");
             break;
     }
     
