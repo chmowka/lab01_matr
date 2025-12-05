@@ -1,59 +1,55 @@
 #include <stdio.h>
+#include <math.h>
 
- 
-int zamena(int *a, int *b) {
-    int c;  
-    
-    c = *a;  
-    *a = *b;    
-    *b = c;  
+void mesta(int *x, int *y){
+    int c;
+
+    c = *x;
+    *x = *y;
+    *y = c;
 }
 
-int main() {
-   
-    int v, p, k;  
+int main (){
+
+    int v, p, k;
+
+    printf("S doma Vasi = "); scanf("%d", &v);
+    printf("S doma Peti = "); scanf("%d", &p);
+    printf("S doma Koli = "); scanf("%d", &k);
+
+    mesta(&v, &p);
+    mesta(&p, &k);
     
-    printf("Vvedite S doma Vasi= ");
-    scanf("%d", &v);
-    printf("Vvedite S doma Peti= ");
-    scanf("%d", &p);
-    printf("Vvedite S doma Koli= ");
-    scanf("%d", &k);
-    
-    printf("Vasya= %d\n", v);
-    printf("Petya =%d\n", p);
-    printf("Kolya= %d\n", k);
-    
-    
-    zamena(&v, &p);
-    printf(" Posle obmena  Vasya=%d  Petya=%d, Kolya=%d\n", v, p, k);
-    
+    printf("\n");
+
+    printf("S doma Vasi = %d \n", v); 
+    printf("S doma Peti = %d \n", p); 
+    printf("S doma Koli = %d \n", k); 
+
+    printf("\n  B)  \n");
 
     int arr[10];  
 
-    printf("Vvedite 10  chisel= \n");
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i+=1) {
         printf("arr[%d] = ", i);
         scanf("%d", &arr[i]);
     }
     
-    print("\n");
-    printf("Ishodny massiv  ");
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", arr[i]);
-    }
     printf("\n");
-    
-    for (int i = 0; i < 10; i = i + 2) {
-        zamena(&arr[i], &arr[i + 1]);
-    }
-    
-    
-    printf("Posle obmena ");
     for (int i = 0; i < 10; i+=1) {
         printf("%d ", arr[i]);
     }
-  
+
+    printf("\n");
     
+    for (int i = 0; i < 9; i = i + 2) {
+        mesta(&arr[i], &arr[i + 1]);
+    }
+    
+    
+    printf("posle obmena ");
+    for (int i = 0; i < 10; i+=1) {
+        printf("%d ", arr[i]);
+    }
     return 0;
 }
