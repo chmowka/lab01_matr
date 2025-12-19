@@ -16,7 +16,7 @@ void print_m(int m, int n, int mat[m][n]) {
     printf("Matrica %dx%d:\n", m, n);
     for (int i = 0; i < m; i+=1) {
         for (int j = 0; j < n; j+=1) {
-            printf("%d ", mat[i][j]);  
+            printf("%d ", mat[i][j]); 
         }
         printf("\n"); 
     }
@@ -34,11 +34,13 @@ void square_m(int m, int n, int mat[m][n], int result[m][n]) {
 int main() {
     int m, n;
     
-    printf("KOL-vo strok =");
+    printf("KOL-vo strok = ");
     scanf("%d", &m);
     
     printf("KOL-vo stolbcov = ");
     scanf("%d", &n);
+    
+    
     
     int matrica[m][n];
     int squar_mat[m][n];  
